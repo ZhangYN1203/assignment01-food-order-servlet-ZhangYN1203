@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
-         version="5.0">
-
-    <display-name>外卖订单管理系统</display-name>
-
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    
     <welcome-file-list>
         <welcome-file>order.html</welcome-file>
     </welcome-file-list>
-
+    
     <servlet>
         <servlet-name>MenuListServlet</servlet-name>
         <servlet-class>cs.sbs.web.servlet.MenuListServlet</servlet-class>
@@ -18,7 +16,7 @@
         <servlet-name>MenuListServlet</servlet-name>
         <url-pattern>/menu</url-pattern>
     </servlet-mapping>
-
+    
     <servlet>
         <servlet-name>OrderCreateServlet</servlet-name>
         <servlet-class>cs.sbs.web.servlet.OrderCreateServlet</servlet-class>
@@ -27,7 +25,7 @@
         <servlet-name>OrderCreateServlet</servlet-name>
         <url-pattern>/order</url-pattern>
     </servlet-mapping>
-
+    
     <servlet>
         <servlet-name>OrderDetailServlet</servlet-name>
         <servlet-class>cs.sbs.web.servlet.OrderDetailServlet</servlet-class>
@@ -36,5 +34,4 @@
         <servlet-name>OrderDetailServlet</servlet-name>
         <url-pattern>/order/*</url-pattern>
     </servlet-mapping>
-
 </web-app>
